@@ -1,13 +1,161 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-size: 50px;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+
+}
+
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+    
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+.botton_categoria {
+    display: inline;
+    cursor: pointer;
+    float: left;
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.botton_categoria:hover {
+    opacity: 0.5;
+    
+} 
+header ul.nav li {
+    display: inline;
+    cursor: pointer;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+header .presentation {
+    margin: 50px 0;
+    background: url("./img/lelouch.jpg") no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+    position: relative;
+}
+
+header .presentation::after {
+    content: "ReadGeass shop online";
+    position: absolute;
+    top: 370px;
+    left: 50px;
+    width: 400px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+header .presentation::before {
+    content: "Kazakhstan's the best online Novel & Manga store";
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    width: 400px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main .item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+    transform: scale(1.03);
+    
+}
+
+main h2, main p, main b {
+    margin: 10px 20px;
+    color: #333
+}
+
+main .add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #4B0082;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color:#fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 800;
+    transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+    transform: scale(1.3) translateY(-3px);
+}
+main b {
+    color: #800080;
+}
+footer {
+    text-align: center;
+    margin-top: 100px;
 }
